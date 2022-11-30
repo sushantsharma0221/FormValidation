@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="form.css">
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+    <!-- container start -->
+    <div class="container">
+        <p>Can you please provide your personal details.</p>
+        <!-- form start -->
+        <form class="form" onsubmit="return validateForm()">
+            <div class="input">
+                <label for="Name">
+                    <b>Name</b> </label>
+                <input class="name" id="name" type="text" placeholder="" required>
+            </div>
+            <div class="input">
+                <label for="DOB">
+                    <b>Date of birth</b> </label>
+                <input class="date" type="date" placeholder="" required>
+            </div>
+            <div class="input">
+                <label for="Contact No">
+                    <b>Contact Number</b> </label>
+                <input class="phone" id="phone" type="tel" placeholder="" required>
+            </div>
+            <div class="input">
+                <label for="Country">
+                    <b>Country</b> </label>
+                <select class="countries" name="countries" id="countries" required>
+                    <option value="country">Country</option>
+                </select>
+            </div>
+
+            <div class="input">
+                <label for="Your email">
+                    <b>Your email</b> </label>
+                <input class="email" id="email" type="text" placeholder="" required>
+            </div>
+            <div class="result">
+
+            </div>
+
+            <div class="btn"> <button value="submit" type="submit" class="submit-btn">Submit</button></div>
+
+        </form>
+        <!-- form end -->
+    </div>
+
+    <!-- container end -->
+</body>
+
+</html>
